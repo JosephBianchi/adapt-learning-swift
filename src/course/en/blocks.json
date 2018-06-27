@@ -20,6 +20,26 @@
         "title": "Block"
     },
     {
+        "_id": "b-500",
+        "_type": "block",
+        "_parentId": "5b241aea7c4380c30435cdb8",
+        "_onScreen": {
+            "_isEnabled": false,
+            "_classes": "",
+            "_percentInviewVertical": 50
+        },
+        "_isVisible": true,
+        "_isHidden": false,
+        "_isAvailable": true,
+        "_isOptional": false,
+        "instruction": "",
+        "_trackingId": 9,
+        "_classes": "",
+        "body": "",
+        "displayTitle": "",
+        "title": "Block"
+    },
+    {
         "_id": "5b241aea7c4380c30435cdbf",
         "_type": "block",
         "_parentId": "5b241aea7c4380c30435cdb9",

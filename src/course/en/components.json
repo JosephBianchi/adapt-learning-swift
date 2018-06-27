@@ -77,7 +77,7 @@
     "_items": [
       {
         "title": "Section One",
-        "body": "<ul><li><a href=\"http://localhost:5000/preview/5b1012b56900225810eff2bc/5b228e9ab7f5ffa60783db11/#/id/5b228f1eb7f5ffa60783db14\">Lesson 1.1 - Learn About HealX</a></li><li><a href=\"http://localhost:5000/preview/5b1012b56900225810eff2bc/5b228e9ab7f5ffa60783db11/#/id/5b229675b7f5ffa60783db18\">Lesson 1.2 - Learn About Patient Charts</a></li><li><a href=\"http://localhost:5000/preview/5b1012b56900225810eff2bc/5b228e9ab7f5ffa60783db11/#/id/5b23d5ea7c4380c30435cd94\">Lesson 1.3&nbsp;- Learn About Patient Assessment Style Guides</a></li></ul>",
+        "body": "<ul><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb5\">Lesson 1.1 - Learn About HealX</a></li><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb6\">Lesson 1.2 - Learn About Patient Charts</a></li><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb7\">Lesson 1.3&nbsp;- Learn About Patient Assessment Style Guides</a></li></ul>",
         "_graphic": {
           "alt": "",
           "src": "",
@@ -370,5 +370,19 @@
       "transcriptLinkButton": "",
       "transcriptLink": ""
     }
+  },
+  {
+    "_id":"c-30",
+    "_parentId":"b-500",
+    "_type":"component",
+    "_component":"next-button",
+    "_classes":"",
+    "_layout":"left",
+    "title": "Button",
+    "displayTitle": "Next Lesson",
+    "label": "Button Label (optional)",
+    "instruction": "Instructions (optional)",
+    "_hoverText": "Continue",
+    "_requirePageCompletion": false
   }
 ]

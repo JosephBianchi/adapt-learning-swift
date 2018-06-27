@@ -5,7 +5,7 @@ define([
     'libraries/mediaelement-and-player',
     'libraries/mediaelement-and-player-accessible-captions',
     'libraries/mediaelement-fullscreen-hook'
-], function(Adapt, ComponentView, getNextContentObject) {
+], function(Adapt, ComponentView, getNextContentObject, PlayMedia) {
 
     var froogaloopAdded = false;
 
@@ -185,6 +185,7 @@ define([
         },
 
         onMediaElementPlay: function(event) {
+          console.log(event);
 
             Adapt.trigger("media:stop", this);
 
@@ -202,6 +203,7 @@ define([
             this.model.set('_isMediaPlaying', false);
         },
 
+        //custom code
         onMediaElementEnded: function(event) {
             console.log('hi');
             this.model.set('_isMediaEnded', true);
@@ -393,6 +395,9 @@ define([
 
             this.setReadyStatus();
             this.setupEventListeners();
+            //custom code
+            var thisthis = this
+            setTimeout(function() {thisthis.onOverlayClick()}, 5000);
         },
 
         addThirdPartyAfterFixes: function() {

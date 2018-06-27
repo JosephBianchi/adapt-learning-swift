@@ -5,6 +5,9 @@
     {{#if _accessibility._isSkipNavigationEnabled}}
         <button class="skip-nav-link a11y-ignore a11y-ignore-focus" data-event="skipNavigation" aria-label="{{_globals._accessibility._ariaLabels.skipNavigation}}">{{{_globals._accessibility.skipNavigationText}}}</button>
     {{/if}}
+    <!-- custom code -->
+    <button type="button" onClick="location.href='http://localhost:9001/#/id/5b241aea7c4380c30435cdb2'" name="button">Overview</button>
+    <button type="button" onClick="location.href='http://localhost:9001/#/id/5b241aea7c4380c30435cdb1'" name="button">Course Content</button>
     <button class="base navigation-back-button icon icon-controls-small-left" data-event="backButton" aria-label="{{_globals._accessibility._ariaLabels.previous}}"></button>
     <button class="base navigation-drawer-toggle-button icon icon-list" data-event="toggleDrawer" aria-label="{{_globals._accessibility._ariaLabels.navigationDrawer}}"></button>
 </div>
