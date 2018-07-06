@@ -94,7 +94,7 @@
     },
     "_latestTrackingId": 9,
     "description": "",
-    "body": "<p style=\"text-align:center\"><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb1\" class=\"start-button\">Start / Resume</a></p>",
+    "body": "<p style=\"text-align:center\"><a href=\"#/id/5b241aea7c4380c30435cdb1\" class=\"start-button\">Start / Resume</a></p>",
     "displayTitle": "Udemy Course",
     "title": "Copy of Udemy Course",
     "_pageLevelProgress": {

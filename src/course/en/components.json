@@ -77,7 +77,7 @@
     "_items": [
       {
         "title": "Section One",
-        "body": "<ul><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb5\">Lesson 1.1 - Learn About HealX</a></li><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb6\">Lesson 1.2 - Learn About Patient Charts</a></li><li><a href=\"http://localhost:9001/#/id/5b241aea7c4380c30435cdb7\">Lesson 1.3&nbsp;- Learn About Patient Assessment Style Guides</a></li></ul>",
+        "body": "<ul><li><a href=\"#/id/5b241aea7c4380c30435cdb5\">Lesson 1.1 - Learn About HealX</a></li><li><a href=\"#/id/5b241aea7c4380c30435cdb6\">Lesson 1.2 - Learn About Patient Charts</a></li><li><a href=\"#/id/5b241aea7c4380c30435cdb7\">Lesson 1.3&nbsp;- Learn About Patient Assessment Style Guides</a></li></ul>",
         "_graphic": {
           "alt": "",
           "src": "",
