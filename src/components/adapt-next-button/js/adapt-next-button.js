@@ -40,12 +40,15 @@ define([
          * Invoked when the next button is clicked.
          */
         onClickNextButton: function() {
-            
+
             var nextPageId = this.model.get("_nextPage");
             if (!nextPageId || !nextPageId.length) {
                 var currentPage = this.model.findAncestor();
+                console.log(currentPage);
                 var next = getNextContentObject(currentPage, this.model.get("_skipMenus") !== false);
-                nextPageId = next && next.get("_id");
+                console.log(next);
+                var nextPageId = next && next.get("_id");
+                console.log(`nextpageid ${nextPageId}`);
             }
 
             if (nextPageId) {
@@ -55,7 +58,7 @@ define([
 
         /**
          * Invoked when a change is detected in the page's completion status.
-         * 
+         *
          * @param  {Model}  The page where the _isComplete attribute has changed.
          */
         onPageCompletionUpdate: function(page) {

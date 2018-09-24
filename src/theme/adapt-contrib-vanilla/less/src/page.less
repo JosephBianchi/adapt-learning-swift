@@ -6,10 +6,12 @@
 
     .page-header {
         background-color: @background-color-inverted;
+        height: 1.5vh;
     }
 
     .page-header-inner {
         padding: @page-padding-top 0 @page-padding-bottom;
+
 
         @media all and (max-width: (@device-width-large + 20px)) {
             padding: @page-padding-top 20px @page-padding-bottom;
@@ -32,6 +34,17 @@
 
     .page-title {
         margin-bottom: @page-title-margin-bottom;
+// custom code
+        .h1 {
+          position: relative;
+          top: -90px;
+          font-size: 80%;
+
+          @media screen and (max-height: 1100px), screen and (max-width: 950px) {
+            top: -110px;
+            font-size: 60%;
+          }
+        }
     }
 
     .page-body {

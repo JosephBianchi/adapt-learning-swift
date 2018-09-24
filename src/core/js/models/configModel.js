@@ -1,5 +1,5 @@
 define([
-    'core/js/adapt'
+    'core/js/adapt',
 ], function (Adapt) {
 
     var ConfigModel = Backbone.Model.extend({

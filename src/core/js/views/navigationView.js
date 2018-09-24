@@ -9,6 +9,7 @@ define([
         initialize: function() {
             this.listenToOnce(Adapt, 'courseModel:dataLoading', this.remove);
             this.listenTo(Adapt, 'router:menu router:page', this.hideNavigationButton);
+            this.listenTo(Adapt, 'router:menu router:page', this.hideNextBackButton);
             this.template = "navigation";
             this.preRender();
         },
@@ -51,8 +52,26 @@ define([
             }
         },
 
+        // custom code
+        hideNextBackButton: function(model) {
+            if (model.get('_type') === "course" || model.get('_id') === '5b241aea7c4380c30435cdb1' || model.get('_id') === '5b241aea7c4380c30435cdb2' || model.get('_id') === 'co-50') {
+              $('.navigation-next-button').addClass('display-none');
+            } else {
+              this.showNavigationButton();
+            }
+        },
+
+        hideNextBackButton: function(model) {
+            if (model.get('_type') === "course" || model.get('_id') === '5b241aea7c4380c30435cdb1' || model.get('_id') === '5b241aea7c4380c30435cdb2' || model.get('_id') === '5b241aea7c4380c30435cdb5') {
+              $('.navigation-prev-lesson-button').addClass('display-none');
+            } else {
+              this.showNavigationButton();
+            }
+        },
+
+
         showNavigationButton: function() {
-            $('.navigation-back-button, .navigation-home-button').removeClass('display-none');
+            $('.navigation-back-button, .navigation-home-button, .navigation-next-button, .navigation-prev-lesson-button').removeClass('display-none');
         }
 
     });

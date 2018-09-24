@@ -2,8 +2,11 @@ define([
     'core/js/adapt',
     'core/js/models/routerModel',
     'core/js/views/pageView',
-    'core/js/startController'
-], function(Adapt, RouterModel, PageView) {
+    'core/js/startController',
+    '../../components/adapt-next-button/js/next',
+    '../../components/adapt-previous-button/js/previous',
+    'coreViews/componentView',
+], function(Adapt, RouterModel, PageView, getNextContentObject, getpreviousContentObject, ComponentView, NextButton) {
 
     Adapt.router = new RouterModel(null, {reset: true});
 
@@ -22,6 +25,9 @@ define([
             });
             this.listenTo(Adapt, 'navigation:backButton', this.navigateToPreviousRoute);
             this.listenTo(Adapt, 'navigation:homeButton', this.navigateToHomeRoute);
+            // custom code nextLesson
+            this.listenTo(Adapt, 'navigation:nextLesson', this.navigateToNextLesson);
+            this.listenTo(Adapt, 'navigation:prevLesson', this.navigateToPrevLesson);
             this.listenTo(Adapt, 'navigation:skipNavigation', this.skipNavigation);
             this.listenTo(Adapt, 'navigation:parentButton', this.navigateToParent);
             this.listenTo(Adapt, "router:navigateTo", this.navigateToArguments);
@@ -46,7 +52,7 @@ define([
 
         handleRoute: function() {
             var args = this.pruneArguments(arguments);
-            
+
             if (Adapt.router.get('_canNavigate')) {
                 // Reset _isCircularNavigationInProgress protection as code is allowed to navigate away
                 this._isCircularNavigationInProgress = false;
@@ -254,6 +260,48 @@ define([
                 this.navigateToParent();
             }
         },
+        // custom code next lesson
+        navigateToNextLesson: function() {
+          console.log(Adapt.contentObjects.findWhere({_id:Adapt.location._currentId}));
+          var currentPage = Adapt.contentObjects.findWhere({_id:Adapt.location._currentId});
+          console.log(currentPage);
+          var siblings = currentPage.getSiblings(true);
+          var pageIndex = siblings.indexOf(currentPage);
+          if (pageIndex < 0) {
+              return null;
+          }
+
+          var next = siblings.at(pageIndex + 1);
+          if (!next) {
+              next = getNextContentObject(currentPage.getParent());
+          }
+          console.log(next);
+          var nextPageId = next && next.get("_id");
+          console.log(`nextpageid ${nextPageId}`);
+
+          if (nextPageId) {
+              Backbone.history.navigate('#/id/' + nextPageId, {trigger: true});
+          }
+        },
+
+        // custom code previous lesson
+        navigateToPrevLesson: function() {
+          console.log(Adapt.contentObjects.findWhere({_id:Adapt.location._currentId}));
+          var currentPage = Adapt.contentObjects.findWhere({_id:Adapt.location._currentId});
+          console.log(currentPage);
+          var siblings = currentPage.getSiblings(true);
+          var pageIndex = siblings.indexOf(currentPage);
+          if (pageIndex <= 0) {
+              return null;
+          }
+
+          var prev = siblings.at(pageIndex - 1);
+          var previousPageId = prev && prev.get("_id");
+          if (previousPageId) {
+              Backbone.history.navigate('#/id/' + previousPageId, {trigger: true});
+          }
+        },
+
 
         navigateToHomeRoute: function(force) {
             if (Adapt.router.get('_canNavigate') || force ) {
@@ -327,7 +375,7 @@ define([
             this.$html
                 .addClass(classes)
                 .attr('data-location', Adapt.location._currentLocation);
-                
+
             this.$wrapper
                 .removeClass()
                 .addClass(classes)

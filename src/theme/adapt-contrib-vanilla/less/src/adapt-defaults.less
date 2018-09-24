@@ -408,3 +408,14 @@
 @icon-correct-color: @validation-success;
 @icon-incorrect-color: @validation-error;
 
+//
+#app {
+  @navigation-height: variable;
+}
+
+// custom code - hide on mobile - should find better place for this
+@media screen and (max-width: 760px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

@@ -25,7 +25,9 @@
     }
 
     .mejs-container {
-        background-color: transparent;
+        background-color: transparent; //custom code
+        max-height: 70vh; //custom code
+        width: auto; //custom code
         .mejs-controls .mejs-time {
             padding-right:1px;
             padding-left:1px;
@@ -80,7 +82,11 @@
         width:100%;
         display:block;
     }
-    
+
+    .media-inner {
+      max-height: 70vh; //custom code
+    }
+
     // Bug Fix for touch devices to override standard hover event in mep.less L119
     // ==============================
     .mejs-overlay {
@@ -133,7 +139,7 @@
             background-image: url(../../assets/controls.svg);
         }
     }
-    
+
     .accessibility.no-touch & {
         .mejs-controls .mejs-button {
             button:focus {

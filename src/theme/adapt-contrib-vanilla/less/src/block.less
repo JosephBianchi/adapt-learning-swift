@@ -6,9 +6,13 @@
 
     .block-inner {
         max-width: @device-width-large;
+        max-width: 90%; //custom code
         margin: auto;
         padding: @block-padding-top 0 @block-padding-bottom;
         // reduce padding as screen width decreases
+        @media screen and (max-height: 1250px) {
+          padding: 0.6% 0 0.3%; //custom code
+        }
         @media all and (max-width: (@device-width-large + 20px)) {
             padding: (@block-padding-top / 2) 20px (@block-padding-bottom / 2);
         }

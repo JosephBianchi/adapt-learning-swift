@@ -52,5 +52,12 @@
       "_suppressErrors": false,
       "_commitOnVisibilityChangeHidden": true
     }
+  },
+  "_iosscrollfix": {
+      "_isEnabled": true,
+      "_onHTMLClasses": ".ios, .os-ios",
+  	"_isReflowFixEnabled": true,
+      "_isIFrameFixEnabled": true,
+      "_iFrameFixHeightTrim": 0
   }
 }

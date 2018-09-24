@@ -397,7 +397,7 @@ define([
             this.setupEventListeners();
             //custom code
             var thisthis = this
-            setTimeout(function() {thisthis.onOverlayClick()}, 5000);
+            setTimeout(function() {thisthis.onOverlayClick()}, 1000);
         },
 
         addThirdPartyAfterFixes: function() {

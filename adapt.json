@@ -23,6 +23,8 @@
         "adapt-contrib-spoor": "2",
         "adapt-contrib-bookmarking": "2",
         "adapt-contrib-languagePicker": "1",
-        "adapt-next-button": "*"
+        "adapt-next-button": "*",
+        "adapt-search": "*",
+        "adapt-iOSScrollFix": "*"
     }
 }

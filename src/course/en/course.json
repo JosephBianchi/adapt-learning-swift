@@ -92,10 +92,9 @@
             "buttonText": "Submit"
         }
     },
-    "_latestTrackingId": 9,
+    "_latestTrackingId": 20,
     "description": "",
-    "body": "<p style=\"text-align:center\"><a href=\"#/id/5b241aea7c4380c30435cdb1\" class=\"start-button\">Start / Resume</a></p>",
-    "displayTitle": "Udemy Course",
+    "displayTitle": "SWIFT 101",
     "title": "Copy of Udemy Course",
     "_pageLevelProgress": {
         "_isEnabled": true,
@@ -111,5 +110,17 @@
             "yes": "Yes",
             "no": "No"
         }
+    },
+    "_search": {
+        "_isEnabled": true,
+        "_drawerOrder": 0,
+        "title": "",
+        "description": "Type in search words and enter",
+        "noResultsMessage": "Sorry, no results were found",
+        "awaitingResultsMessage": "Formulating results...",
+        "_showHighlights": true,
+        "_showFoundWords": true,
+        "_previewWords": 15,
+        "_previewCharacters": 30
     }
 }

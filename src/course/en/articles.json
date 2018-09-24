@@ -34,7 +34,45 @@
     "instruction": "",
     "_classes": "",
     "body": "",
-    "displayTitle": "Article",
+    "displayTitle": "",
+    "title": "Article"
+  },
+  {
+    "_id": "a-50",
+    "_type": "article",
+    "_parentId": "co-20",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_isVisible": true,
+    "_isHidden": false,
+    "_isAvailable": true,
+    "_isOptional": false,
+    "instruction": "",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "",
+    "title": "Article"
+  },
+  {
+    "_id": "a-55",
+    "_type": "article",
+    "_parentId": "co-25",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_isVisible": true,
+    "_isHidden": false,
+    "_isAvailable": true,
+    "_isOptional": false,
+    "instruction": "",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "",
     "title": "Article"
   },
   {
@@ -53,7 +91,7 @@
     "instruction": "",
     "_classes": "",
     "body": "",
-    "displayTitle": "Lessons",
+    "displayTitle": "",
     "title": "Lessons"
   },
   {
@@ -67,7 +105,7 @@
     "instruction": "",
     "_classes": "",
     "body": "",
-    "displayTitle": "Article title",
+    "displayTitle": "",
     "title": "Article title"
   },
   {
@@ -93,6 +131,25 @@
     "_id": "5b241aea7c4380c30435cdbd",
     "_type": "article",
     "_parentId": "5b241aea7c4380c30435cdb7",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
+    "_isVisible": true,
+    "_isHidden": false,
+    "_isAvailable": true,
+    "_isOptional": false,
+    "instruction": "",
+    "_classes": "",
+    "body": "",
+    "displayTitle": "",
+    "title": "Article title"
+  },
+  {
+    "_id": "a-100",
+    "_type": "article",
+    "_parentId": "co-50",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
