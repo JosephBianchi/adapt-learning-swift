@@ -12,6 +12,7 @@ define([
             this.listenTo(Adapt, 'router:menu router:page', this.hideNextLessonButton);
             this.listenTo(Adapt, 'router:menu router:page', this.hidePrevLessonButton);
             this.listenTo(Adapt, 'router:menu router:page', this.hidePauseButton);
+            this.listenTo(Adapt, 'router:menu router:page', this.resetPauseButtonImg);
             this.template = "navigation";
             this.preRender();
         },
@@ -68,6 +69,14 @@ define([
               $('.navigation-pause-button').addClass('display-none');
             } else {
               $('.navigation-pause-button').removeClass('display-none');
+            }
+        },
+
+        resetPauseButtonImg: function(model) {
+            var pauseImg = 'course/en/assets/icons/_ionicons_svg_ios-pause.svg';
+            $(".navigation-pause-button img").attr("src", pauseImg);
+            if( $(".button-text").css("display") !== "none") {
+              $(".navigation-pause-button.button-text").text("Pause");
             }
         },
 

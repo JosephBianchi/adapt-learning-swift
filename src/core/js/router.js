@@ -322,10 +322,12 @@ define([
           var playImg = 'course/en/assets/icons/_ionicons_svg_ios-play.svg';
           var mediaState = $(".mejs-button button").attr("title");
           console.log(mediaState);
-          if (mediaState == "Pause") {
+          if (mediaState === "Pause") {
             $(".navigation-pause-button img").attr("src", playImg);
-          } else {
+            $(".pause-button-text").text("Play");
+          } else if (mediaState === "Play") {
             $(".navigation-pause-button img").attr("src", pauseImg);
+            $(".pause-button-text").text("Pause");
           }
         },
 
