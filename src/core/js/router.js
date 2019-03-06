@@ -26,6 +26,7 @@ define([
             this.listenTo(Adapt, 'navigation:backButton', this.navigateToPreviousRoute);
             this.listenTo(Adapt, 'navigation:homeButton', this.navigateToHomeRoute);
             // custom code nextLesson
+            this.listenTo(Adapt, 'navigation:logout', this.logout)
             this.listenTo(Adapt, 'navigation:nextLesson', this.navigateToNextLesson);
             this.listenTo(Adapt, 'navigation:prevLesson', this.navigateToPrevLesson);
             this.listenTo(Adapt, 'navigation:skipNavigation', this.skipNavigation);
@@ -302,10 +303,20 @@ define([
           }
         },
 
+        // custom code logout
+        logout: function() {
+          var currentPage = Adapt.location._currentId;
+          console.log(Adapt.location._currentId);
+          console.log('logout');
+          var Session = Backbone.Model.extend({
+            url: 'http://localhost:3000/logout'
+          });
+          window.location.href = 'http://localhost:3000';
+        },
 
         navigateToHomeRoute: function(force) {
             if (Adapt.router.get('_canNavigate') || force ) {
-                this.navigate('#/', {trigger: true});
+                this.navigate('#/5b241aea7c4380c30435cdb2', {trigger: true});
             }
         },
 

@@ -6,11 +6,12 @@
         <button class="skip-nav-link a11y-ignore a11y-ignore-focus" data-event="skipNavigation" aria-label="{{_globals._accessibility._ariaLabels.skipNavigation}}">{{{_globals._accessibility.skipNavigationText}}}</button>
     {{/if}}
     <!-- custom code -->
-    <button class="nav-button" type="button" onClick="location.href='#/'" name="button">Course Home</button>
-    <button class="nav-button" type="button" onClick="location.href='#/id/5b241aea7c4380c30435cdb1'" name="button">Course Content</button>
-    <button class="nav-button" type="button" onClick="location.href='#/id/5b241aea7c4380c30435cdb2'" name="button">Overview</button>
+    <button class="nav-button" type="button" onClick="location.href='#/id/5b241aea7c4380c30435cdb2'" name="button"><span class="button-text">Course Home</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-home.svg"/></span></button>
+    <button class="nav-button" type="button" onClick="location.href='#/id/5b241aea7c4380c30435cdb1'" name="button"><span class="button-text">Course Content</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-list-box.svg"/></span></button>
+    <!-- <button class="nav-button nav-overview" type="button" onClick="location.href='#/id/5b241aea7c4380c30435cdb2'" name="button"><span class="button-text">Overview</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-flash.svg"/></span></button> -->
     <button class="base navigation-back-button icon icon-controls-small-left" data-event="backButton" aria-label="{{_globals._accessibility._ariaLabels.previous}}"></button>
-    <button class="navigation-drawer-toggle-button icon icon-search nav-button" data-event="toggleDrawer" aria-label="{{_globals._accessibility._ariaLabels.navigationDrawer}}"> Search...</button>
-    <button class="nav-button navigation-prev-lesson-button" data-event="prevLesson">Previous</button>
-    <button class="nav-button navigation-next-button" data-event="nextLesson">Next</button>
+    <button class="navigation-drawer-toggle-button icon icon-search nav-button" data-event="toggleDrawer" aria-label="{{_globals._accessibility._ariaLabels.navigationDrawer}}"><span class="button-text"> Search...</span></button>
+    <button class="nav-button" type="button" data-event="logout" name="button"><span class="button-text">Sign Out</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-log-out.svg"/></span></button>
+    <button class="nav-button navigation-next-button" data-event="nextLesson"><span class="button-text">Next</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-skip-forward.svg"/></span></button>
+    <button class="nav-button navigation-prev-lesson-button" data-event="prevLesson"><span class="button-text">Previous</span><span class="button-icon"><img src="course/en/assets/icons/_ionicons_svg_ios-skip-backward.svg"/></span></button>
 </div>

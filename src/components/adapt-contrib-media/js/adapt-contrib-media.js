@@ -178,9 +178,9 @@ define([
 
             // handle other completion events in the event Listeners
             $(this.mediaElement).on({
-            	'play': this.onMediaElementPlay,
-            	'pause': this.onMediaElementPause,
-            	'ended': this.onMediaElementEnded
+              'play': this.onMediaElementPlay,
+              'pause': this.onMediaElementPause,
+              'ended': this.onMediaElementEnded
             });
         },
 

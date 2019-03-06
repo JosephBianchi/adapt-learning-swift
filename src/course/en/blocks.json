@@ -20,26 +20,6 @@
         "title": "Block"
     },
     {
-        "_id": "b-500",
-        "_type": "block",
-        "_parentId": "5b241aea7c4380c30435cdb8",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 9,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block"
-    },
-    {
         "_id": "b-100",
         "_type": "block",
         "_parentId": "a-50",
@@ -74,26 +54,6 @@
         "_isOptional": false,
         "instruction": "",
         "_trackingId": 17,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block"
-    },
-    {
-        "_id": "b-224",
-        "_type": "block",
-        "_parentId": "a-55",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 18,
         "_classes": "",
         "body": "",
         "displayTitle": "",
@@ -215,46 +175,6 @@
         "title": "Block title"
     },
     {
-        "_id": "b-600",
-        "_type": "block",
-        "_parentId": "5b241aea7c4380c30435cdb9",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 11,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block title"
-    },
-    {
-        "_id": "b-800",
-        "_type": "block",
-        "_parentId": "a-50",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 13,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block title"
-    },
-    {
         "_id": "b-900",
         "_type": "block",
         "_parentId": "a-50",
@@ -295,26 +215,6 @@
         "title": "Block title"
     },
     {
-        "_id": "5b241aea7c4380c30435cdc5",
-        "_type": "block",
-        "_parentId": "5b241aea7c4380c30435cdbd",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 8,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block title"
-    },
-    {
         "_id": "b-825",
         "_type": "block",
         "_parentId": "5b241aea7c4380c30435cdbd",
@@ -349,26 +249,6 @@
         "_isOptional": false,
         "instruction": "",
         "_trackingId": 19,
-        "_classes": "",
-        "body": "",
-        "displayTitle": "",
-        "title": "Block title"
-    },
-    {
-        "_id": "b-834",
-        "_type": "block",
-        "_parentId": "a-100",
-        "_onScreen": {
-            "_isEnabled": false,
-            "_classes": "",
-            "_percentInviewVertical": 50
-        },
-        "_isVisible": true,
-        "_isHidden": false,
-        "_isAvailable": true,
-        "_isOptional": false,
-        "instruction": "",
-        "_trackingId": 20,
         "_classes": "",
         "body": "",
         "displayTitle": "",

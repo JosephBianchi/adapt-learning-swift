@@ -62,8 +62,13 @@
     "_start": {
         "_isMenuDisabled": false,
         "_force": false,
-        "_startIds": [],
-        "_isEnabled": false
+        "_startIds": [
+            {
+                "_id": "5b241aea7c4380c30435cdb2",
+                "_skipIfComplete": false
+            }
+        ],
+        "_isEnabled": true
     },
     "_lockType": "custom",
     "_classes": "",
@@ -95,7 +100,7 @@
     "_latestTrackingId": 20,
     "description": "",
     "displayTitle": "SWIFT 101",
-    "title": "Copy of Udemy Course",
+    "title": "SwiftU",
     "_pageLevelProgress": {
         "_isEnabled": true,
         "_showPageCompletion": true

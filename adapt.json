@@ -20,7 +20,7 @@
         "adapt-contrib-pageLevelProgress": "2",
         "adapt-contrib-resources": "2",
         "adapt-contrib-slider": "2",
-        "adapt-contrib-spoor": "2",
+        "adapt-contrib-spoor": "*",
         "adapt-contrib-bookmarking": "2",
         "adapt-contrib-languagePicker": "1",
         "adapt-next-button": "*",

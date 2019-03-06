@@ -60,4 +60,72 @@
       border-bottom: solid #1a8cff;
       margin-left: 1px;
     }
+
+    .navigation-prev-lesson-button {
+      float: right;
+    }
+
+    .navigation-next-button {
+      float: right;
+    }
+
+    .button-icon {
+      display: none;
+    }
+
+      @media only screen and (max-width: 992px) {
+      .button-text {
+        display: none;
+      }
+      .button-icon {
+        display: inline-block;
+        float: right;
+        width: 2em;
+        height: auto;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      // .nav-overview {
+      //   display: none;
+      // }
+
+      .navigation-back-button {
+        display: none !important;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .button-icon img {
+        padding-left: 50%;
+      }
+
+      .nav-button {
+        width: 5vw;
+        height: auto;
+      }
+
+      .icon-search {
+        padding-right: 40px;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      height: 40px;
+
+      .button-icon img {
+        width: 30px;
+        height: auto;
+        padding: 3px 0px 0px 0px;
+      }
+      .nav-button {
+        width: 32px;
+        height: auto;
+        padding: 0px;
+      }
+      .icon-search {
+        padding-top: 4px;
+        padding-right: 0px;
+      }
+    }
 }

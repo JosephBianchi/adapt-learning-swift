@@ -154,19 +154,32 @@
     "_layout": "full",
     "_type": "component",
     "_parentId": "5b241aea7c4380c30435cdc1",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    },
     "body": "",
-    "displayTitle": "Component title",
+    "displayTitle": "",
     "title": "Component title",
     "_isVisible": true,
     "_isHidden": false,
     "_isAvailable": true,
     "_isOptional": false,
     "_classes": "",
-    "_component": "blank",
+    "_component": "graphic",
     "_pageLevelProgress": {
       "_isEnabled": true
+    },
+    "instruction": "",
+    "_graphic": {
+      "alt": "",
+      "large": "course/en/assets/cover-train-trainer.png",
+      "small": "course/en/assets/cover-train-trainer.png",
+      "attribution": ""
     }
   },
+
 
   {
     "_id":"c-60",
@@ -263,63 +276,6 @@
     }
   },
   {
-    "_id":"c-75",
-    "_parentId":"b-600",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-76",
-    "_parentId":"b-600",
-    "_type":"component",
-    "_component":"previous-button",
-    "_classes":"",
-    "_layout":"left",
-    "title": " Previous Lesson",
-    "displayTitle": " Previous Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Text displayed when hovering over the button",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-85",
-    "_parentId":"b-800",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-86",
-    "_parentId":"b-800",
-    "_type":"component",
-    "_component":"previous-button",
-    "_classes":"",
-    "_layout":"left",
-    "title": "Button",
-    "displayTitle": "Previous Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-
-  {
     "_id": "c-101",
     "_layout": "full",
     "_type": "component",
@@ -370,36 +326,6 @@
       "transcriptLinkButton": "",
       "transcriptLink": ""
     }
-  },
-
-
-  {
-    "_id":"c-90",
-    "_parentId":"5b241aea7c4380c30435cdc5",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-91",
-    "_parentId":"5b241aea7c4380c30435cdc5",
-    "_type":"component",
-    "_component":"previous-button",
-    "_classes":"",
-    "_layout":"left",
-    "title": "Button",
-    "displayTitle": "Previous Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
   },
   {
     "_id": "c-100",
@@ -520,48 +446,6 @@
     }
   },
   {
-    "_id":"c-30",
-    "_parentId":"b-500",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-103",
-    "_parentId":"b-224",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-104",
-    "_parentId":"b-224",
-    "_type":"component",
-    "_component":"previous-button",
-    "_classes":"",
-    "_layout":"left",
-    "title": " Previous Lesson",
-    "displayTitle": " Previous Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Text displayed when hovering over the button",
-    "_requirePageCompletion": false
-  },
-  {
     "_id":"c-109",
     "_parentId":"b-223",
     "_type":"component",
@@ -624,34 +508,6 @@
       "transcriptLinkButton": "",
       "transcriptLink": ""
     }
-  },
-  {
-    "_id":"c-107",
-    "_parentId":"b-834",
-    "_type":"component",
-    "_component":"next-button",
-    "_classes":"",
-    "_layout":"right",
-    "title": "Button",
-    "displayTitle": "Next Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Continue",
-    "_requirePageCompletion": false
-  },
-  {
-    "_id":"c-108",
-    "_parentId":"b-834",
-    "_type":"component",
-    "_component":"previous-button",
-    "_classes":"",
-    "_layout":"left",
-    "title": " Previous Lesson",
-    "displayTitle": " Previous Lesson",
-    "label": "Button Label (optional)",
-    "instruction": "Instructions (optional)",
-    "_hoverText": "Text displayed when hovering over the button",
-    "_requirePageCompletion": false
   },
   {
     "_id":"c-105",

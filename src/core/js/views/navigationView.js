@@ -9,7 +9,8 @@ define([
         initialize: function() {
             this.listenToOnce(Adapt, 'courseModel:dataLoading', this.remove);
             this.listenTo(Adapt, 'router:menu router:page', this.hideNavigationButton);
-            this.listenTo(Adapt, 'router:menu router:page', this.hideNextBackButton);
+            this.listenTo(Adapt, 'router:menu router:page', this.hideNextLessonButton);
+            this.listenTo(Adapt, 'router:menu router:page', this.hidePrevLessonButton);
             this.template = "navigation";
             this.preRender();
         },
@@ -45,7 +46,7 @@ define([
         },
 
         hideNavigationButton: function(model) {
-            if (model.get('_type') === "course") {
+            if (model.get('_type') === "course" || model.get('_id') === '5b241aea7c4380c30435cdb2') {
                 $('.navigation-back-button, .navigation-home-button').addClass('display-none');
             } else {
                 this.showNavigationButton();
@@ -53,7 +54,7 @@ define([
         },
 
         // custom code
-        hideNextBackButton: function(model) {
+        hideNextLessonButton: function(model) {
             if (model.get('_type') === "course" || model.get('_id') === '5b241aea7c4380c30435cdb1' || model.get('_id') === '5b241aea7c4380c30435cdb2' || model.get('_id') === 'co-50') {
               $('.navigation-next-button').addClass('display-none');
             } else {
@@ -61,7 +62,7 @@ define([
             }
         },
 
-        hideNextBackButton: function(model) {
+        hidePrevLessonButton: function(model) {
             if (model.get('_type') === "course" || model.get('_id') === '5b241aea7c4380c30435cdb1' || model.get('_id') === '5b241aea7c4380c30435cdb2' || model.get('_id') === '5b241aea7c4380c30435cdb5') {
               $('.navigation-prev-lesson-button').addClass('display-none');
             } else {
