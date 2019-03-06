@@ -29,6 +29,7 @@ define([
             this.listenTo(Adapt, 'navigation:logout', this.logout)
             this.listenTo(Adapt, 'navigation:nextLesson', this.navigateToNextLesson);
             this.listenTo(Adapt, 'navigation:prevLesson', this.navigateToPrevLesson);
+            this.listenTo(Adapt, "navigation:pauseLesson", this.pauseMedia)
             this.listenTo(Adapt, 'navigation:skipNavigation', this.skipNavigation);
             this.listenTo(Adapt, 'navigation:parentButton', this.navigateToParent);
             this.listenTo(Adapt, "router:navigateTo", this.navigateToArguments);
@@ -312,6 +313,20 @@ define([
             url: 'http://localhost:3000/logout'
           });
           window.location.href = 'http://localhost:3000';
+        },
+
+        // custom code pauseMedia
+        pauseMedia: function() {
+          $(".mejs-button button[title|='Play'], button[title|='Pause']").click();
+          var pauseImg = 'course/en/assets/icons/_ionicons_svg_ios-pause.svg';
+          var playImg = 'course/en/assets/icons/_ionicons_svg_ios-play.svg';
+          var mediaState = $(".mejs-button button").attr("title");
+          console.log(mediaState);
+          if (mediaState == "Pause") {
+            $(".navigation-pause-button img").attr("src", playImg);
+          } else {
+            $(".navigation-pause-button img").attr("src", pauseImg);
+          }
         },
 
         navigateToHomeRoute: function(force) {
