@@ -166,7 +166,7 @@
     "_isHidden": false,
     "_isAvailable": true,
     "_isOptional": false,
-    "_classes": "",
+    "_classes": "course-main-graphic",
     "_component": "graphic",
     "_pageLevelProgress": {
       "_isEnabled": true
@@ -176,7 +176,8 @@
       "alt": "",
       "large": "course/en/assets/cover-train-trainer.png",
       "small": "course/en/assets/cover-train-trainer.png",
-      "attribution": ""
+      "attribution": "",
+      "doIt": "play"
     }
   },
 

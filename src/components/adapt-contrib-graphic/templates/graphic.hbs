@@ -1,7 +1,11 @@
 <div class="graphic-inner component-inner" role="region" aria-label="{{_globals._components._graphic.ariaRegion}}">
     {{> component this}}
     <div class="graphic-widget component-widget{{#if _graphic.attribution}} graphic-widget-attribution{{/if}}">
-      <img src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}"{{#if _graphic.alt}} aria-label="{{_graphic.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+      <img src="{{_graphic.src}}" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}"{{#if _graphic.alt}} aria-label="{{_graphic.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}
+      {{#if _graphic.doIt}}
+      onclick=location.href='http://localhost:9001/#/id/5b241aea7c4380c30435cdb5'
+      {{/if}}
+      />
     </div>
     {{#if _graphic.attribution}}
       <div class="graphic-attribution">{{{_graphic.attribution}}}</div>

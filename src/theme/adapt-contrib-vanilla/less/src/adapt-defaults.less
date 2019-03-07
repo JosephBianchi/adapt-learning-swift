@@ -413,6 +413,21 @@
   @navigation-height: variable;
 }
 
+// custom code - graphic-overlay
+
+.course-main-graphic {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.parent-container-main-course-image:hover .course-main-graphic {
+  opacity: 0.3;
+}
+
 // custom code - hide on mobile - should find better place for this
 @media screen and (max-width: 760px) {
   .hide-on-mobile {

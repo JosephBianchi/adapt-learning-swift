@@ -75,9 +75,7 @@ define([
         resetPauseButtonImg: function(model) {
             var pauseImg = 'course/en/assets/icons/_ionicons_svg_ios-pause.svg';
             $(".navigation-pause-button img").attr("src", pauseImg);
-            if( $(".button-text").css("display") !== "none") {
-              $(".navigation-pause-button.button-text").text("Pause");
-            }
+            $(".pause-button-text").text("Pause");
         },
 
         hidePrevLessonButton: function(model) {
